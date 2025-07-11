@@ -1,4 +1,4 @@
-# My Personal Portfolio Website (v2.0)
+# My Personal Portfolio Website (v2.0.0)
 
 ![Portfolio Screenshot](assets/screenshot.png)
 <!-- QUAN TRỌNG: Hãy chụp một bức ảnh đẹp của trang web mới và lưu nó với tên là "screenshot.png" trong thư mục "assets" của bạn -->
