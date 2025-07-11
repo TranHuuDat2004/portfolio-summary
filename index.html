@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TIÊU ĐỀ MỚI -->
+    <title>Trần Hữu Đạt - Full-stack Web Developer</title>
+    <!-- THAY ICON MỚI (NẾU CÓ) -->
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- THÊM FONT MỚI TỪ GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- LINK CSS VÀ FONT AWESOME -->
+    <link rel="stylesheet" href="css/new-version.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Thanh tiến trình cuộn giữ nguyên -->
+    <div class="scroll-progress-bar"></div>
+
+    <header class="main-header">
+        <!-- Nhóm 1: Logo -->
+        <a class="logo" href="index.html"><span>tranhuudat</span>2004</a>
+
+        <!-- Nhóm 2: Khối điều hướng -->
+        <div class="header-navigation"> <!-- THÊM THẺ NÀY -->
+            <nav class="main-nav">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+                <span class="nav-indicator"></span>
+            </nav>
+            <a href="assets/resume.pdf" class="resume-button" download>Resume</a>
+        </div> <!-- THÊM THẺ NÀY -->
+
+    </header>
+
+    <main>
+        <!-- ====================================================== -->
+        <!-- Section 1: Hero (THAY ĐỔI LỚN) -->
+        <!-- ====================================================== -->
+        <section id="hero" class="hero-section">
+            <div class="hero-background"></div>
+            <div class="container hero-container">
+                <!-- Profile Card (bên trái) -->
+                <div class="profile-card-container animate-on-scroll">
+                    <div class="profile-card glass-card">
+                        <div class="profile-header">
+                            <div class="avatar-wrapper">
+                                <img src="assets/my_image1.jpg" alt="Avatar" class="avatar" />
+                                <div class="status-indicator online"></div>
+                            </div>
+                            <div class="profile-info">
+                                <h2>Trần Hữu Đạt</h2>
+                                <p class="job-title">Full-stack Web Developer</p>
+                            </div>
+                        </div>
+                        <div class="profile-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Ho Chi Minh City, Vietnam</p>
+                            <p><i class="fas fa-calendar-alt"></i> Joined 2022</p>
+                            <p><i class="fas fa-briefcase"></i> Ton Duc Thang University</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Hero Text Content (ở giữa) -->
+                <div class="hero-text-content">
+                    <div class="welcome-badge animate-on-scroll">Welcome to my Portfolio</div>
+                    <h1 class="animate-on-scroll">
+                        Building Digital<br>
+                        <span class="gradient-text">Experiences</span>
+                    </h1>
+                    <p style="color: white;" class="animate-on-scroll">A passionate Software Engineering student specializing in creating
+                        efficient, user-centric web applications.</p>
+                    <div class="hero-buttons animate-on-scroll">
+                        <a href="#projects" class="btn btn-primary">View my projects <i
+                                class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Get in touch</a>
+                    </div>
+                    <div class="social-links animate-on-scroll">
+                        <a style="color: white;" href="https://linkedin.com/in/tranhuudat2004" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a style="color: white;" href="https://github.com/TranHuuDat2004" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a style="color: white;" href="mailto:tranhuudat.cv@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a style="color: white;" href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down-indicator"></div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- Music Player Widget -->
+        <!-- ====================================================== -->
+        <div class="music-player-widget">
+            <img src="assets/song-cover.jpg" alt="Song Cover" class="song-cover" id="song-cover">
+            <div class="song-info">
+                <h4 id="song-title">Điều chưa nói</h4>
+                <p id="song-artist">Tia ft. OMIXX</p>
+            </div>
+            <div class="player-controls">
+                <!-- Thêm ID cho các nút -->
+                <i class="fas fa-backward-step" id="prev-btn"></i>
+                <i class="fas fa-pause" id="play-pause-btn"></i> <!-- Bắt đầu với icon pause -->
+                <i class="fas fa-forward-step" id="next-btn"></i>
+            </div>
+            <i class="fas fa-volume-high"></i> <!-- Phần volume sẽ làm sau nếu bạn muốn -->
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- Section 2: About Me (CẬP NHẬT) -->
+        <!-- ====================================================== -->
+        <section id="about" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">My personal story</div>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image-wrapper animate-on-scroll">
+                        <img src="assets/my_image.jpg" alt="A pensive anime character in a snowy city scene">
+                        <div class="status-tag">
+                            <span class="green-dot"></span> Available for work
+                        </div>
+                    </div>
+                    <div class="about-text-content animate-on-scroll">
+                        <p>I am a dedicated Software Engineering student at Ton Duc Thang University with a deep passion
+                            for building efficient and user-friendly web solutions. My journey into programming started
+                            with a curiosity to understand how things work, and it has grown into a drive to create
+                            meaningful applications.</p>
+                        <p>I enjoy tackling challenging problems and continuously expanding my skill set in the
+                            ever-evolving world of technology. From developing full-stack e-commerce platforms to
+                            creating fun, interactive web apps, my goal is to leverage my technical abilities to build
+                            impactful products.</p>
+                        <div class="info-box-wrapper glass-card">
+                            <div class="info-box">
+                                <div>
+                                    <span class="info-label">Name</span>
+                                    <p>Trần Hữu Đạt</p>
+                                </div>
+                                <div>
+                                    <span class="info-label">Email</span>
+                                    <p>tranhuudat.cv@gmail.com</p>
+                                </div>
+                                <div>
+                                    <span class="info-label">Location</span>
+                                    <p>Ho Chi Minh City, VN</p>
+                                </div>
+                                <div>
+                                    <span class="info-label">Availability</span>
+                                    <p class="available-status">Open to Internship</p>
+                                </div>
+                            </div>
+                            <a href="assets/resume/TranHuuDat-Resume-Summary.pdf" download
+                                class="btn-download-resume">Download Resume <i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- Section 3: Skills (CẬP NHẬT) -->
+        <!-- ====================================================== -->
+
+        <!-- Trong section#skills -->
+        <section id="skills" class="content-section">
+            <div class="section-header animate-on-scroll">
+                <div class="section-badge">My Skills</div>
+                <h2 class="section-title">
+                    Technical Stack</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-wrapper"> <!-- THÊM THẺ NÀY -->
+                <div class="skills-grid">
+                    <!-- Các skill card và thông báo loading vẫn ở đây -->
+                    <p class="skills-loading">
+                        <i class="fas fa-spinner fa-spin"></i> Fetching latest skills from GitHub...
+                    </p>
+                </div>
+            </div> <!-- THÊM THẺ NÀY -->
+        </section>
+        <!-- <section id="skills" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">Technologies I work with</div>
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card glass-card animate-on-scroll">
+                        <div class="skill-header"><span class="skill-name">JavaScript (ES6+)</span><span
+                                class="skill-percentage">85%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card animate-on-scroll">
+                        <div class="skill-header"><span class="skill-name">Node.js / Express.js</span><span
+                                class="skill-percentage">80%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card animate-on-scroll">
+                        <div class="skill-header"><span class="skill-name">PHP</span><span
+                                class="skill-percentage">75%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card animate-on-scroll">
+                        <div class="skill-header"><span class="skill-name">HTML5 & CSS3</span><span
+                                class="skill-percentage">90%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card animate-on-scroll">
+                        <div class="skill-header"><span class="skill-name">SQL (MySQL & Firebase)</span><span
+                                class="skill-percentage">70%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card animate-on-scroll">
+                        <div class="skill-header"><span class="skill-name">Tailwind & Bootstrap</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card animate-on-scroll">
+                        <div class="skill-header"><span class="skill-name">Git & GitHub</span><span
+                                class="skill-percentage">85%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card animate-on-scroll">
+                        <div class="skill-header"><span class="skill-name">Docker</span><span
+                                class="skill-percentage">60%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- ====================================================== -->
+        <!-- Section 4: Featured Works (MỚI) -->
+        <!-- ====================================================== -->
+        <section id="projects" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">Some of my recent work</div>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card glass-card animate-on-scroll">
+                        <div class="project-image-container"><img src="assets/omacha/Home1.jpg" alt="Omacha Shop"
+                                class="project-image"></div>
+                        <div class="project-content">
+                            <h3>Omacha Shop - E-commerce</h3>
+                            <p>A full-stack toy e-commerce platform built with PHP & MySQL, featuring a robust admin
+                                panel.</p>
+                            <div class="project-tags">
+                                <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Bootstrap</span>
+                            </div>
+                            <div class="project-links"><a href="omachashop.html">View Details</a><a
+                                    href="https://github.com/TranHuuDat2004/Omacha_Shop" target="_blank">Code <i
+                                        class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="project-card glass-card animate-on-scroll">
+                        <div class="project-image-container"><img src="assets/brickshop/homepage.png" alt="BrickShop"
+                                class="project-image"></div>
+                        <div class="project-content">
+                            <h3>BrickShop - E-commerce</h3>
+                            <p>A modern e-commerce hub for building block fans, developed with Node.js and a Tailwind
+                                CSS admin UI.</p>
+                            <div class="project-tags">
+                                <span>Node.js</span><span>Express.js</span><span>TailwindCSS</span>
+                            </div>
+                            <div class="project-links"><a href="brickshop.html">View Details</a><a
+                                    href="https://github.com/TranHuuDat2004/BrickShop" target="_blank">Code <i
+                                        class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="project-card glass-card animate-on-scroll">
+                        <div class="project-image-container"><img src="assets/anime.tv/main-page-spy.PNG" alt="ANIME.TV"
+                                class="project-image"></div>
+                        <div class="project-content">
+                            <h3>ANIME.TV - Streaming Site</h3>
+                            <p>A personal project inspired by Crunchyroll, built with pure JavaScript for a dynamic user
+                                experience.</p>
+                            <div class="project-tags"><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div>
+                            <div class="project-links"><a href="https://tranhuudat2004.github.io/anime.tv/"
+                                    target="_blank">Live Demo</a><a href="https://github.com/TranHuuDat2004/anime.tv"
+                                    target="_blank">Code <i class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- Section 5: Awards & Achievements (ĐÃ BỔ SUNG) -->
+        <!-- ====================================================== -->
+        <section id="awards" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">Recognition & Accomplishments</div>
+                    <h2 class="section-title">Awards & Achievements</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="award-card glass-card animate-on-scroll">
+                    <div class="award-info">
+                        <p class="award-date">April 2023</p>
+                        <h3 class="award-title">Consolation Prize</h3>
+                        <p class="award-competition">'Class Website Design Competition 2023'</p>
+                        <p class="award-issuer">Faculty of Information Technology, Ton Duc Thang University</p>
+                    </div>
+                    <div class="award-description">
+                        <ul>
+                            <li>
+                                Achieved prize in a university-wide competition with over 20 participating teams, as
+                                part of the "Youth Pioneering Digital Transformation" initiative.
+                            </li>
+                            <li>
+                                Developed a class website on WordPress aimed at fostering academic exchange,
+                                contributing significantly to UI/UX design and theme customization.
+                            </li>
+                            <li>
+                                Demonstrated strong teamwork, creativity, and the practical application of web
+                                development skills in a competitive environment.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- Section 6: Experience (ĐÃ CẬP NHẬT CHO BẠN) -->
+        <!-- ====================================================== -->
+        <section id="experience" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">My professional journey</div>
+                    <h2 class="section-title">Experience & Education</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="timeline">
+                    <!-- Timeline Item 1: Học vấn -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Bachelor of Software Engineering</h3>
+                            <p class="timeline-meta">Ton Duc Thang University | 2022 - 2026</p>
+                            <p>Building a strong foundation in computer science, algorithms, and web development
+                                principles, while maintaining a GPA of 7.8/10.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 2: Kinh nghiệm làm việc -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Invigilator (Part-time)</h3>
+                            <p class="timeline-meta">Ton Duc Thang University | 2024 - Present</p>
+                            <p>Ensured the integrity of university examinations, developing strong discipline, attention
+                                to detail, and the ability to perform under pressure.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 3: Dự án cá nhân -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Personal Project Development</h3>
+                            <p class="timeline-meta">GitHub | 2022 - Present</p>
+                            <p>Continuously developing full-stack applications and interactive tools to sharpen my
+                                skills and explore new technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- Section 7: Contact (ĐÃ CẬP NHẬT CHO BẠN) -->
+        <!-- ====================================================== -->
+        <section id="contact" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">Let's work together</div>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info-wrapper glass-card animate-on-scroll">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:tranhuudat.cv@gmail.com">tranhuudat.cv@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <span>LinkedIn</span>
+                                <a href="https://linkedin.com/in/tranhuudat2004"
+                                    target="_blank">linkedin.com/in/tranhuudat2004</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <span>GitHub</span>
+                                <a href="https://github.com/TranHuuDat2004"
+                                    target="_blank">github.com/TranHuuDat2004</a>
+                            </div>
+                        </div>
+                        <h3 class="status-title">Current Status</h3>
+                        <div class="contact-status">
+                            <span class="green-dot"></span>
+                            Open for Web Developer Internship opportunities
+                        </div>
+                    </div>
+                    <!-- Form liên hệ - Bạn cần một dịch vụ backend như Formspree để nó hoạt động -->
+                    <form class="contact-form glass-card animate-on-scroll" action="https://formspree.io/f/YOUR_FORM_ID"
+                        method="POST">
+                        <h3>Send Me a Message</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message <i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ====================================================== -->
+    <!-- Footer (MỚI) -->
+    <!-- ====================================================== -->
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <!-- Cột 1: Giới thiệu -->
+            <div class="footer-column footer-about">
+                <h3 class="footer-logo"><span>tranhuudat</span>2004</h3>
+                <p>A passionate Web Developer dedicated to building beautiful and useful applications.</p>
+            </div>
+
+            <!-- Cột 2: Quick Links -->
+            <div class="footer-column footer-links">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="assets/resume.pdf" download>Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Cột 3: Connect with Me -->
+            <div class="footer-column footer-connect">
+                <h4 class="footer-title">Connect with Me</h4>
+                <ul>
+                    <li><a href="https://github.com/TranHuuDat2004" target="_blank"><i class="fab fa-github"></i>
+                            GitHub</a>
+                    </li>
+                    <li><a href="https://linkedin.com/in/tranhuudat2004" target="_blank"><i
+                                class="fab fa-linkedin-in"></i>
+                            LinkedIn</a></li>
+                    <li><a href="mailto:tranhuudat.cv@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Dòng Copyright ở dưới cùng -->
+        <div class="footer-copyright">
+            <div class="container">
+                <p>Copyright © <span id="currentYear"></span> Trần Hữu Đạt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <audio id="audio-source"></audio>
+    <script src="js/playlist.js"></script>
+    <script src="js/new-version.js"></script>
+</body>
+
+</html>
