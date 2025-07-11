@@ -1,6 +1,6 @@
 # My Personal Portfolio Website (v2.0.0)
 
-![Portfolio Screenshot](assets/screenshot.png)
+![Portfolio Screenshot](assets/mainpage.PNG)
 <!-- QUAN TRỌNG: Hãy chụp một bức ảnh đẹp của trang web mới và lưu nó với tên là "screenshot.png" trong thư mục "assets" của bạn -->
 
 Welcome to the repository for my personal portfolio. This is a completely redesigned and rebuilt version focusing on a modern interface, smooth user experience, and unique interactive features.
